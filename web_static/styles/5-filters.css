@@ -1,0 +1,48 @@
+/* Search bar */
+section.filters {
+  background-color: white;
+  height: 70px;
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+/* Search button */
+section.filters button {
+  font-size: 18px;
+  background-color: #ff5a5f;
+  color: #ffffff;
+  height: 48px;
+  width: 20%;
+  border: 0;
+  border-radius: 4px;
+  float: right;
+  margin: 11px 30px;
+  opacity: 1;
+}
+section.filters button:hover {
+  opacity: 0.9;
+}
+/* features of the search bar section */
+.locations,
+.amenities {
+  height: 100%;
+  width: 25%;
+  float: left;
+}
+.locations h3,
+.amenities h3 {
+  font-weight: 600;
+  margin-left: 30px;
+  margin-bottom: 0;
+}
+.locations h4,
+.amenities h4 {
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.locations {
+  border-right: 1px solid #dddddd;
+}
