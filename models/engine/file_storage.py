@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """this module  serializes instances to a JSON file
 and deserializes JSON file to instances"""
+
 import json
 import uuid
 import datetime
@@ -15,7 +16,7 @@ import os
 
 class FileStorage:
     """class to serialize and deserialize"""
-    __file_path = "./file.json"
+    __file_path = "file.json"
     __objects = {}
 
     def all(self):
