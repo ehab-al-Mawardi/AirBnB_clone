@@ -7,10 +7,18 @@ import models
 
 
 class BaseModel:
-    """class base model"""
+
+    """Class from which all other classes will inherit"""
 
     def __init__(self, *args, **kwargs):
-        """init function"""
+
+        """Initializes instance attributes
+
+        Args:
+            - *args: list of arguments
+            - **kwargs: dict of key-values arguments
+        """
+
         if kwargs:
             kwargs.pop("__class__")
             for key, v in kwargs.items():
@@ -26,7 +34,8 @@ class BaseModel:
             models.storage.new(self)
 
     def __str__(self):
-        """return class object"""
+        """Returns official string representation"""
+
         return "[{}] ({}) {}".format(__class__.__name__, self.id, vars(self))
 
     def save(self):
